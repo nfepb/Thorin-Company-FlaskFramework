@@ -32,6 +32,22 @@
     />
   </div>
 
+  <!-- If even number in loop, company member will be displayed with following layout: -->
+  {% else %}
+
+  <div class="col-md-5">
+    <img
+      src="{{ member.image_source }}"
+      alt=""
+      class="featurette-image image-responsive img-fluid"
+    />
+  </div>
+
+  <div class="col-md-7">
+    <h3>{{ loop.index }}. {{ member.name }}</h3>
+    <p>{{ member.description }}</p>
+  </div>
+
   {% endif %}
 </div>
 
