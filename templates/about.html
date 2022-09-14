@@ -17,17 +17,22 @@
 {% for member in company %}
 
 <div class="row featurette">
+  <!-- Display on the page only the members of the company that are odd numbers in the loop -->
+  {% if loop.index %2 != 0 %}
+
   <div class="col-md-7">
-    <h3>{{ member.name }}</h3>
+    <h3>{{ loop.index }}. {{ member.name }}</h3>
     <p>{{ member.description }}</p>
   </div>
   <div class="col-md-5">
     <img
       src="{{ member.image_source }}"
       alt=""
-      class="featurette-image image-responsive"
+      class="featurette-image image-responsive img-fluid"
     />
   </div>
+
+  {% endif %}
 </div>
 
 <hr class="featurette-divider" />
