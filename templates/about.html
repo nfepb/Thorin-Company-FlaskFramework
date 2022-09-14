@@ -51,6 +51,8 @@
   {% endif %}
 </div>
 
+{% if loop.index != loop.length %}
+
 <hr class="featurette-divider" />
 
-{% endfor %} {% endblock %}
+{% endif %} {% endfor %} {% endblock %}
