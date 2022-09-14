@@ -8,19 +8,14 @@
       will get back to you as soon as possible!
     </p>
     <div class="my-5">
-      <!-- * * * * * * * * * * * * * * *-->
-      <!-- * * SB Forms Contact Form * *-->
-      <!-- * * * * * * * * * * * * * * *-->
-      <!-- This form is pre-integrated with SB Forms.-->
-      <!-- To make this form functional, sign up at-->
-      <!-- https://startbootstrap.com/solution/contact-forms-->
-      <!-- to get an API token!-->
-      <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+      <!-- Form -->
+      <form method="POST" id="contactForm" name="contactForm">
         <div class="form-floating">
           <input
             class="form-control"
             id="name"
             type="text"
+            name="name"
             placeholder="Enter your name..."
             data-sb-validations="required"
           />
@@ -34,6 +29,7 @@
             class="form-control"
             id="email"
             type="email"
+            name="email"
             placeholder="Enter your email..."
             data-sb-validations="required,email"
           />
@@ -50,6 +46,7 @@
             class="form-control"
             id="phone"
             type="tel"
+            name="phone"
             placeholder="Enter your phone number..."
             data-sb-validations="required"
           />
@@ -62,6 +59,7 @@
           <textarea
             class="form-control"
             id="message"
+            name="message"
             placeholder="Enter your message here..."
             style="height: 12rem"
             data-sb-validations="required"
